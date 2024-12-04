@@ -87,3 +87,44 @@ console.log(expressionResult);
 
 let expressionResult2 = numTwo + numFour >= numOne + numThree;
 console.log(expressionResult2);
+
+console.log("===================================");
+
+// Flow control
+
+let score = 75;
+if (score > 100) {
+  // This block will not get exected because the condition inside the if statement is not met. If the number is smaller then it will be true
+  console.log("The score is greater than 100");
+}
+// Else statement
+let points = 51;
+if (points > 60) {
+  console.log("The student has passed the exam");
+  console.log(`The score is ${points}`);
+} else {
+  console.log("The student failed the exam");
+  console.log("This message will also get printed in console");
+}
+
+// Nested if statements
+
+let age = 20;
+let hasId = true;
+
+if (age >= 18) {
+  if (hasId) {
+    console.log("You can enter the club");
+  } else {
+    console.log("YOu need an ID to enter the club");
+  }
+} else {
+  console.log("You are not old enough to enter the club");
+}
+
+// Nested if statement with prompt
+
+console.log("========================");
+
+let myAge = prompt("Enter your age");
+console / log(myAge);
