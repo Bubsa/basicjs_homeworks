@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <script src="./script.js" defer></script>
+    <!--go koristime defer sho i dava na skriptata za sajtot da zavrshi da
+    loadira pa tek posle da se ukluchi-->
+  </head>
+  <body>
+    <h1>Events</h1>
+    <button onclick="alert(`You clicked me`)">Click Me (First Example)</button>
+
+    <br />
+    <br />
+
+    <button id="myButton">Click Me (Second Example)</button>
+    <input type="button" value="Count Rabbits" onclick="countRabbits()" />
+
+    <br />
+    <br />
+
+    <div id="myDiv" style="background-color: aqua">Go over with the mouse</div>
+    <br />
+    <br />
+
+    <button id="buttonEvent">Click me through the event listener</button>
+    <br />
+    <br />
+
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" name="nameInput" id="nameInput" />
+    <br />
+    <br />
+
+    <button id="helloThere">Hello There Button</button>
+    <br />
+    <br />
+
+    <div id="redDiv" style="width: 300px; height: 300px"></div>
+
+    <br />
+    <br />
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" />
+    <p id="feedback" style="color: red"></p>
+
+    <br />
+    <br />
+
+    <div class="parent" id="parent">
+      Parent Div
+      <div class="child" id="child">Child Div</div>
+    </div>
+
+    <br />
+    <br />
+
+    <form id="myForm">
+      <input type="text" placeholder="Type something" />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+    <br />
+
+    <button id="butOne">Press to change</button>
+    <p id="parOne">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti,
+      ipsa incidunt facilis temporibus earum! Consequatur suscipit dolorem
+      maiores laborum culpa quidem rem voluptatibus, est ad voluptas error
+      veritatis repudiandae!
+    </p>
+
+    <script>
+      //   const button = document.getElementById("myButton");
+      //   button.onclick = function () {
+      //     <!--Ne e praksa da se pishuva skripta vo samiot html file-->
+      //     alert(`You clicked me`);
+      //   };
+
+      function countRabbits() {
+        for (let i = 1; i <= 3; i++) {
+          alert(`Rabbit ${i}`);
+        }
+      }
+    </script>
+  </body>
+</html>
